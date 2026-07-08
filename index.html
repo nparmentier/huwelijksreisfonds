@@ -24,11 +24,14 @@
             box-sizing: border-box;
         }
         @media (max-width: 768px) {
-            body {
-                background-image: url('Achtergrond-Mobiel.png');
-                background-attachment: scroll;
-            }
-        }
+        body {
+        background-image: url('Achtergrond-Mobiel.jpg');
+        background-size: contain; /* Zorgt dat de hele afbeelding zichtbaar blijft i.p.v. inzoomen */
+        background-repeat: repeat; /* Laat het patroon herhalen als de pagina langer is */
+        background-position: top center;
+        background-attachment: scroll;
+    }
+}
 
         /* Een apart HTML-element dat de foto over de hele achtergrond spant */
         .bg-foto {
