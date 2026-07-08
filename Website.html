@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huwelijksreisfonds Ingmar & Naomi</title>
+    <style>
+        /* De foto zit nu in de HTML, dus de body krijgt alleen een vaste groene kleur als achtergrond */
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #81c784; 
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        /* Een apart HTML-element dat de foto over de hele achtergrond spant */
+        .bg-foto {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Zorgt dat de foto mooi de pagina vult */
+            z-index: -1;       /* Dwingt de foto om achter alle andere inhoud te blijven */
+        }
+
+        h1 {
+            color: #2e7d32;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.92);
+            padding: 15px 35px;
+            border-radius: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            margin-bottom: 40px;
+            border: 2px dashed #81c784;
+        }
+        
+        .intro {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            max-width: 840px;
+            width: 100%;
+            margin-bottom: 40px;
+            text-align: center;
+            line-height: 1.6;
+            border: 1px solid #c8e6c9;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            text-align: center;
+            flex: 1;
+            min-width: 280px;
+            border: 1px solid #c8e6c9;
+        }
+
+        .card h2 {
+            color: #388e3c;
+            margin-top: 0;
+        }
+
+        .amount {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1b5e20;
+            margin: 15px 0;
+        }
+
+        .thermometer {
+            width: 40px;
+            height: 250px;
+            background: #e0e0e0;
+            border-radius: 20px;
+            margin: 0 auto 20px auto;
+            position: relative;
+            padding: 5px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            box-shadow: inset 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .fill {
+            width: 100%;
+            background: linear-gradient(to top, #ff7043, #ffa726);
+            border-radius: 15px;
+            transition: height 0.8s ease-in-out;
+            height: 0%; 
+        }
+    </style>
+</head>
+<body>
+
+    <!-- De foto wordt nu als normaal plaatje ingeladen op de achtergrond -->
+    <img src="achtergrond.jpg" alt="Achtergrond" class="bg-foto">
+
+    <h1>💛 Huwelijksreisfonds Ingmar & Naomi 💛</h1>
+    
+    <div class="intro">
+        <p>Welkom op onze huwelijksreispagina! Hier vind je alle activiteiten die wij graag zouden ondernemen tijdens onze huwelijksreis. Zoek een leuke uit en help ons mee om de doelen te bereiken!</p>
+        <p><strong>Je kan je cadeau overmaken naar NL00ABNA0000000000 op naam van "Parmentier en Limburg". Vermeld dan in de omschrijving aan welk doel jij wil bijdragen. De thermometers worden dagelijks geupdate!</strong></p>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h2>Mount Cook Helikopervlucht</h2>
+            <div class="amount">€0 / €300</div>
+            <div class="thermometer">
+                <div class="fill" style="height: 0%;"></div>
+            </div>
+            <p>0% van ons doel bereikt!</p>
+        </div>
+
+        <div class="card">
+            <h2>Cruise over Lake Manapouri</h2>
+            <div class="amount">€0 / €300</div>
+            <div class="thermometer">
+                <div class="fill" style="height: 0%;"></div>
+            </div>
+            <p>0% van ons doel bereikt!</p>
+        </div>
+        
+        <div class="card">
+            <h2>Abel Tasman Tour</h2>
+            <div class="amount">€0 / €300</div>
+            <div class="thermometer">
+                <div class="fill" style="height: 0%;"></div>
+            </div>
+            <p>0% van ons doel bereikt!</p>
+        </div>
+
+        <div class="card">
+            <h2>Maori Culturele Ervaring</h2>
+            <div class="amount">€0 / €300</div>
+            <div class="thermometer">
+                <div class="fill" style="height: 0%;"></div>
+            </div>
+            <p>0% van ons doel bereikt!</p>
+        </div>
+        
+        <div class="card">
+            <h2>Tongariro Crossing Wandeling</h2>
+            <div class="amount">€0 / €300</div>
+            <div class="thermometer">
+                <div class="fill" style="height: 0%;"></div>
+            </div>
+            <p>0% van ons doel bereikt!</p>
+        </div>
+
+        <div class="card">
+            <h2>Wijnproeverij Abel Tasman Regio</h2>
+            <div class="amount">€0 / €300</div>
+            <div class="thermometer">
+                <div class="fill" style="height: 0%;"></div>
+            </div>
+            <p>0% van ons doel bereikt!</p>
+        </div>
+    </div>
+
+</body>
+</html>
